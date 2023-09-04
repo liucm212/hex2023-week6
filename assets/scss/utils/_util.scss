@@ -1,10 +1,30 @@
 // hover
 
 .hover{
+  &--helper-primary{
+    &:hover{
+      color: var(--bs-helper-primary);
+    }
+  }
+  &--secondary{
+    &:hover{
+      color: var(--bs-secondary);
+    }
+  }
+  &--helper-third{
+    &:hover{
+      color: var(--bs-helper-third);
+    }
+  }
   &-bg{
+    &--dark{
+      &:hover{
+        background-color: var(--bs-dark);
+      }
+    }
     &--helper-third-darken{
       &:hover{
-        background-color: darken( #F3F1E5, 10%);
+        background-color: var(--bs-helper-fourth);
       }
     }
   }
@@ -23,8 +43,23 @@
   &-14{
     font-size: 14px;
   }
+  &-16{
+    font-size: 16px;
+  } 
   &-18{
     font-size: 18px;
+  } 
+  &-24{
+    font-size: 24px;
+  } 
+  &-32{
+    font-size: 32px;
+  } 
+  &-48{
+    font-size: 48px;
+  } 
+  &-60{
+    font-size: 60px;
   }
   &-md{
     @include md{
@@ -37,6 +72,18 @@
       &-18{
         font-size: 18px;
       } 
+      &-24{
+        font-size: 24px;
+      } 
+      &-32{
+        font-size: 32px;
+      } 
+      &-48{
+        font-size: 48px;
+      } 
+      &-60{
+        font-size: 60px;
+      }
     }
   }
   &-lg{
@@ -50,6 +97,18 @@
       &-18{
         font-size: 18px;
       } 
+      &-24{
+        font-size: 24px;
+      } 
+      &-32{
+        font-size: 32px;
+      } 
+      &-48{
+        font-size: 48px;
+      } 
+      &-60{
+        font-size: 60px;
+      }
     }
   }
   &-xl{
@@ -63,6 +122,18 @@
       &-18{
         font-size: 18px;
       } 
+      &-24{
+        font-size: 24px;
+      } 
+      &-32{
+        font-size: 32px;
+      } 
+      &-48{
+        font-size: 48px;
+      } 
+      &-60{
+        font-size: 60px;
+      }
     }
   }
 }

@@ -4,13 +4,465 @@
     <%- include('./layout/meta'); -%>
     <title>活動訂票網</title>
   </head>
-  <body>
+  <body class="bg-helper-third">
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+    <!-- banner -->
+    <div class="container mt-16 mt-xl-32 mb-32 mb-xl-48">
+      <section>
+        <a
+          href="#"
+          class="banner-bg pt-16 pb-24 pt-xl-48 text-light d-flex flex-column justify-content-between"
+        >
+          <span class="fz-32 fz-lg-60 ms-40">19 MAY 2023</span>
+          <div>
+            <h2 class="text-center mb-lg-16 lh-sm">隔牆有耳-沒有草東的派對</h2>
+            <p class="d-none d-lg-block text-center">
+              你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br />帶上啤酒、野餐墊，讓我們在Live
+              House外面一起開場「沒有草東的派對」吧！
+            </p>
+          </div>
+        </a>
+      </section>
+    </div>
 
-    <button class="btn btn-primary">Bootstrap Button</button>
-    <i class="icofont-ui-file"></i>
+    <main>
+      <!-- type options -->
+      <div class="mb-32 mb-xl-48">
+        <div class="container">
+          <ul class="row g-8 g-lg-24">
+            <li class="col-4 col-lg-2">
+              <a href="#">
+                <div
+                  class="card--upAndDown border border-2 border-primary d-flex flex-column justify-content-between align-items-center py-36"
+                >
+                  <div class="item-img">
+                    <img
+                      src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate01.svg"
+                      alt=""
+                    />
+                  </div>
+                  <span class="item-text">演出</span>
+                </div>
+              </a>
+            </li>
+            <li class="col-4 col-lg-2">
+              <a href="#">
+                <div
+                  class="card--upAndDown border border-2 border-primary d-flex flex-column justify-content-between align-items-center py-36"
+                >
+                  <div class="item-img">
+                    <img
+                      src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate02.svg"
+                      alt=""
+                    />
+                  </div>
+                  <span class="item-text">聯誼</span>
+                </div>
+              </a>
+            </li>
+            <li class="col-4 col-lg-2">
+              <a href="#">
+                <div
+                  class="card--upAndDown border border-2 border-primary d-flex flex-column justify-content-between align-items-center py-36"
+                >
+                  <div class="item-img">
+                    <img
+                      src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate03.svg"
+                      alt=""
+                    />
+                  </div>
+                  <span class="item-text">展覽</span>
+                </div>
+              </a>
+            </li>
+            <li class="col-4 col-lg-2">
+              <a href="#">
+                <div
+                  class="card--upAndDown border border-2 border-primary d-flex flex-column justify-content-between align-items-center py-36"
+                >
+                  <div class="item-img">
+                    <img
+                      src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate04.svg"
+                      alt=""
+                    />
+                  </div>
+                  <span class="item-text">美食</span>
+                </div>
+              </a>
+            </li>
+            <li class="col-4 col-lg-2">
+              <a href="#">
+                <div
+                  class="card--upAndDown border border-2 border-primary d-flex flex-column justify-content-between align-items-center py-36"
+                >
+                  <div class="item-img">
+                    <img
+                      src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate05.svg"
+                      alt=""
+                    />
+                  </div>
+                  <span class="item-text">戶外</span>
+                </div>
+              </a>
+            </li>
+            <li class="col-4 col-lg-2 align-self-stretch">
+              <a href="#" class="h-100">
+                <div
+                  class="card--upAndDown border border-2 border-primary h-100 d-flex justify-content-center align-items-center bg-dark"
+                >
+                  <span class="fz-24 fz-lg-48 fw-700 text-secondary"
+                    >探索<br />更多</span
+                  >
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mb-32 mb-xl-60">
+        <!-- recent -->
+        <div class="container">
+          <!-- recent title -->
+          <section class="pb-24 pb-lg-32">
+            <div class="section-label text-primary">
+              <h2 class="section-title me-9">RECENT</h2>
+              <span class="section-subtitle">近期活動</span>
+            </div>
+          </section>
+
+          <!-- card-upImgDownText--group -->
+          <section>
+            <ul class="row gy-xl-48 gx-xl-24">
+              <!-- card-01 -->
+              <li class="col-md-6 col-lg-4">
+                <div href="#" class="card-upImgDownText">
+                  <h3 class="item-header">19 MAY 2023</h3>
+                  <div class="item-banner ratio ratio-8x5">
+                    <img
+                      class="object-fit-cover"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/01.jpg?raw=true"
+                      alt="四個人摀著眼睛（或是半遮著眼睛）露出害怕的表情，且他們都在看前方的東西。"
+                    />
+                  </div>
+                  <div class="item-body">
+                    <a href="#" class="hover--helper-primary"
+                      ><h4 class="item-body-title">邪典電影派對——房間</h4></a
+                    >
+                    <p class="item-body-content">
+                      你有聽說過「大災難家」裡面的主角 Tommy Wiseau
+                      製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <div class="me-4">
+                        <img
+                          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+                          alt="黑色的光芒圖案。"
+                          width="24px"
+                          height="24px"
+                        />
+                      </div>
+                      <span>社群活動</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <span class="me-4">開賣中</span>
+                      <div>
+                        <img
+                          src="../assets/icons/rounded-double-right.svg"
+                          alt="往右邊的雙箭頭。"
+                          width="16px"
+                          height="16px"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- card-02 -->
+              <li class="col-md-6 col-lg-4">
+                <div href="#" class="card-upImgDownText">
+                  <h3 class="item-header">23 MAY 2023</h3>
+                  <div class="item-banner ratio ratio-8x5">
+                    <img
+                      class="object-fit-cover"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/02.jpg?raw=true"
+                      alt="兩個人物質部份重疊，做出相同的腳步動作：右腳顛起來，左腳往後勾；其中，左邊的女生雙手舉到頭上，比出像開槍一樣的手勢，有嘻哈感；右邊的男生則是一手彎起來，一手伸直，兩手在同一個水平面上。"
+                    />
+                  </div>
+                  <div class="item-body">
+                    <a href="#" class="hover--helper-primary"
+                      ><h4 class="item-body-title">怪舞俱樂部</h4></a
+                    >
+                    <p class="item-body-content">
+                      覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <div class="me-4">
+                        <img
+                          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+                          alt="黑色的光芒圖案。"
+                          width="24px"
+                          height="24px"
+                        />
+                      </div>
+                      <span>演出</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <span class="me-4">檢視活動</span>
+                      <div>
+                        <img
+                          src="../assets/icons/rounded-double-right.svg"
+                          alt="往右邊的雙箭頭。"
+                          width="16px"
+                          height="16px"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- card-03 -->
+              <li class="col-md-6 col-lg-4">
+                <div href="#" class="card-upImgDownText">
+                  <h3 class="item-header">30 MAY 2023</h3>
+                  <div class="item-banner ratio ratio-8x5">
+                    <img
+                      class="object-fit-cover"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/03.jpg?raw=true"
+                      alt="一男一女坐在戶外的沙發上用投影幕看電影，但目前他們正在看著對方聊天。"
+                    />
+                  </div>
+                  <div class="item-body">
+                    <a href="#" class="hover--helper-primary"
+                      ><h4 class="item-body-title">哈利波特馬拉松</h4></a
+                    >
+                    <p class="item-body-content">
+                      每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <div class="me-4">
+                        <img
+                          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+                          alt="黑色的光芒圖案。"
+                          width="24px"
+                          height="24px"
+                        />
+                      </div>
+                      <span>聯誼</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <span class="me-4">開賣中</span>
+                      <div>
+                        <img
+                          src="../assets/icons/rounded-double-right.svg"
+                          alt="往右邊的雙箭頭。"
+                          width="16px"
+                          height="16px"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- card-04 -->
+              <li class="col-md-6 col-lg-4">
+                <div href="#" class="card-upImgDownText">
+                  <h3 class="item-header">12 JUNE 2023</h3>
+                  <div class="item-banner ratio ratio-8x5">
+                    <img
+                      class="object-fit-cover"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/04.jpg?raw=true"
+                      alt="一顆在沙灘上的排球，他的顏色是黃白交錯的。"
+                    />
+                  </div>
+                  <div class="item-body">
+                    <a href="#" class="hover--helper-primary"
+                      ><h4 class="item-body-title">皮卡丘排球大賽</h4></a
+                    >
+                    <p class="item-body-content">
+                      還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <div class="me-4">
+                        <img
+                          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+                          alt="黑色的光芒圖案。"
+                          width="24px"
+                          height="24px"
+                        />
+                      </div>
+                      <span>遊戲競賽</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <span class="me-4">開賣中</span>
+                      <div>
+                        <img
+                          src="../assets/icons/rounded-double-right.svg"
+                          alt="往右邊的雙箭頭。"
+                          width="16px"
+                          height="16px"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- card-05 -->
+              <li class="col-md-6 col-lg-4">
+                <div href="#" class="card-upImgDownText">
+                  <h3 class="item-header">25 JUNE 2023</h3>
+                  <div class="item-banner ratio ratio-8x5">
+                    <img
+                      class="object-fit-cover"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/05.jpg?raw=true"
+                      alt="三個人舉起酒杯，正在做乾杯的動作。"
+                    />
+                  </div>
+                  <div class="item-body">
+                    <a href="#" class="hover--helper-primary"
+                      ><h4 class="item-body-title">酒精路跑</h4></a
+                    >
+                    <p class="item-body-content">
+                      身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <div class="me-4">
+                        <img
+                          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+                          alt="黑色的光芒圖案。"
+                          width="24px"
+                          height="24px"
+                        />
+                      </div>
+                      <span>社群活動</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <span class="me-4">開賣中</span>
+                      <div>
+                        <img
+                          src="../assets/icons/rounded-double-right.svg"
+                          alt="往右邊的雙箭頭。"
+                          width="16px"
+                          height="16px"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- card-06 -->
+              <li class="col-md-6 col-lg-4">
+                <div href="#" class="card-upImgDownText">
+                  <h3 class="item-header">9 JUNE 2023</h3>
+                  <div class="item-banner ratio ratio-8x5">
+                    <img
+                      class="object-fit-cover"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/06.jpg?raw=true"
+                      alt="一個白色牆壁組成的空間，牆壁上掛滿了畫。"
+                    />
+                  </div>
+                  <div class="item-body">
+                    <a href="#" class="hover--helper-primary"
+                      ><h4 class="item-body-title">展覽——我的房間</h4></a
+                    >
+                    <p class="item-body-content">
+                      每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <div class="me-4">
+                        <img
+                          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+                          alt="黑色的光芒圖案。"
+                          width="24px"
+                          height="24px"
+                        />
+                      </div>
+                      <span>展覽</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="d-flex align-items-center hover--helper-primary"
+                    >
+                      <span class="me-4">開賣中</span>
+                      <div>
+                        <img
+                          src="../assets/icons/rounded-double-right.svg"
+                          alt="往右邊的雙箭頭。"
+                          width="16px"
+                          height="16px"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <!-- online -->
+      <div class="container">
+        <!-- online title -->
+        <section>
+          <div class="section-label text-primary">
+            <h2 class="section-title me-9">ONLINE</h2>
+            <span class="section-subtitle">線上活動</span>
+          </div>
+        </section>
+      </div>
+
+      <!-- activities -->
+
+      <!-- follow us + subscribe us -->
+    </main>
+
+    <!-- qoute -->
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

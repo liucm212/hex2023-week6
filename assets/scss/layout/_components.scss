@@ -1,0 +1,135 @@
+// section可以在各個section中使用的元件
+.section{
+  &-label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--bs-primary);
+    padding: 16px 12px;
+    background-color: transparent;
+  }
+  &-title{
+    font-size: 24px;
+  }
+
+  @include lg{
+    &-label{
+      padding: 24px 32px;
+    }
+    &-title{
+      font-size: 64px;
+    }
+    &-subtitle{
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+}
+
+// card-upAndDown
+.card--upAndDown{
+  &:hover{
+    // background-color: var(--bs-helper-secondary);
+    background-color: var(--bs-helper-fourth);
+  }
+  .item{
+    &-img{
+      width: 40px;
+      height: 40px;
+      
+    }
+    &-text{
+      font-weight: 700;
+    }
+  }
+  
+    @include md{
+    .item{
+      &-img{
+        width: 80px;
+        height: 80px;
+      }
+      &-text{
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+// banner
+.banner{
+  &-bg{
+    background: url('../images/banners/banner-index.png') no-repeat center center / cover ;
+    width: 100%;
+    min-height: 350px;
+  }
+
+  @include lg{
+    &-bg{
+      min-height: 518px;
+    }
+  }
+}
+
+
+// card-upImgDownText
+.card-upImgDownText{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  line-height: normal;
+  .item{
+    &-header{
+      font-size: 32px;
+      border-bottom: 3px solid var(--bs-primary);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+    &-banner{
+      margin-bottom: 8px;  
+    }
+    &-body{
+      margin-bottom: 16px;
+      &-title{
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      &-content{
+        line-height: 1.5;
+      }
+    }
+    &-footer{
+      margin-top: auto;
+      font-weight: 700;
+      padding: 8px 0;
+      border-top: 2px solid var(--bs-primary);
+      border-bottom: 2px solid var(--bs-primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @include xl{
+    .item{
+      &-header{
+        font-size: 48px;
+        padding-bottom: 12px;
+        margin-bottom: 16px;
+      }
+      &-banner{
+        margin-bottom: 12px;
+      }
+      &-body{
+        &-title{
+          margin-bottom: 12px;
+          font-size: 24px;
+        }
+      }
+      &-footer{
+        padding: 12.5px 0;
+      }
+    }
+  }
+}
