@@ -1,4 +1,65 @@
-header{
-  line-height: 200px;
-  background-color: greenyellow;
+.header{
+  &-logo{
+    width: 40px;
+    height: 40px;
+  }
+  &-searchBar{
+    max-width: 207px;
+    input{
+      max-width: calc(207px - 40px);
+    }
+    button{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @include md{
+    &-logo{
+      width: 54px;
+      height: 54px;
+    }
+    &-searchBar{
+      min-width: 335px;
+      height: 55px;
+      input{
+        max-width: none;
+        width: calc(335px - 54px);
+      }
+      button{
+        align-self: stretch;
+        width: 54px;
+        height: 100%;
+      }
+    }
+  }
 }
+nav{
+  .nav-item{
+    font-size: 18px;
+  }
+  .menu-btn{
+    position: relative;
+    width: 54px;
+    height: 38px;
+    border: 1px solid var(--bs-primary);
+    border-radius: 4px;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 2px;
+      background-color: var(--bs-primary);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      box-shadow: 0px 8px var(--bs-primary),
+      0px -8px var(--bs-primary)
+      ;
+
+    }
+  }
+}
+
+
+

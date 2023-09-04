@@ -310,14 +310,14 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "primary"         :  #030303,
+  "secondary"       :  #FBFF22,
+  "third"           :  #C96464,
+  "helper-primary"  :  #878787,
+  "helper-secondary":  #4F4F4F,
+  "helper-third"    :  #F3F1E5,
+  "light"           :  #FFFFFF,
+  "dark"            :  #000000
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -368,7 +368,7 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                true !default;
-$enable-rounded:              true !default;
+$enable-rounded:              false !default;
 $enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
@@ -407,14 +407,27 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
-$spacer: 1rem !default;
+$spacer: 0.625rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  4: $spacer   *  .4,
+  8: $spacer   *  .8,
+  12: $spacer  * 1.2,
+  16: $spacer  * 1.6,
+  20: $spacer  * 2  ,
+  24: $spacer  * 2.4,
+  28: $spacer  * 2.8,
+  32: $spacer  * 3.2,
+  36: $spacer  * 3.6,
+  40: $spacer  * 4  ,
+  44: $spacer  * 4.4,
+  48: $spacer  * 4.8,
+  52: $spacer  * 5.2,
+  56: $spacer  * 5.6,
+  60: $spacer  * 6  ,
+  80: $spacer  * 8  , 
+  120: $spacer * 12 ,
+  160: $spacer * 16  
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -486,7 +499,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px,
+  xl: 1320px,
   xxl: 1400px
 ) !default;
 // scss-docs-end grid-breakpoints
@@ -501,7 +514,7 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
+  sm: 375px,
   md: 720px,
   lg: 960px,
   xl: 1140px,

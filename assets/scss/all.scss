@@ -50,8 +50,14 @@
 
 
 
+// helpers
+@import './helpers/mixin' ;
+@import './helpers/font-family' ;
+
 // base settting
-@import './base/base' ; 
+@import './base/reset' ;
+@import './base/base' ;
+
 
 // layout
 @import './layout/header';

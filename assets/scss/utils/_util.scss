@@ -1,0 +1,68 @@
+// hover
+
+.hover{
+  &-bg{
+    &--helper-third-darken{
+      &:hover{
+        background-color: darken( #F3F1E5, 10%);
+      }
+    }
+  }
+  &-border-bottom{
+    &--primary{
+      &:hover{
+        border-bottom: 1px solid var(--bs-primary);
+      }
+    }
+  }
+}
+
+
+// font-size
+.fz{
+  &-14{
+    font-size: 14px;
+  }
+  &-18{
+    font-size: 18px;
+  }
+  &-md{
+    @include md{
+      &-14{
+        font-size: 14px;
+      }
+      &-16{
+        font-size: 16px;
+      } 
+      &-18{
+        font-size: 18px;
+      } 
+    }
+  }
+  &-lg{
+    @include lg{
+      &-14{
+        font-size: 14px;
+      }
+      &-16{
+        font-size: 16px;
+      } 
+      &-18{
+        font-size: 18px;
+      } 
+    }
+  }
+  &-xl{
+    @include xl{
+      &-14{
+        font-size: 14px;
+      }
+      &-16{
+        font-size: 16px;
+      } 
+      &-18{
+        font-size: 18px;
+      } 
+    }
+  }
+}
