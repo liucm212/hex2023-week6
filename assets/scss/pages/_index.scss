@@ -1,1 +1,8 @@
 // 網站首頁設定
+.online{
+  &-img{
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true') no-repeat center -350px / cover;
+    min-height: 250px;
+
+  }
+}

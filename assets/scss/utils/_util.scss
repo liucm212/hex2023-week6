@@ -49,6 +49,9 @@
   &-18{
     font-size: 18px;
   } 
+  &-20{
+    font-size: 20px;
+  } 
   &-24{
     font-size: 24px;
   } 
@@ -71,6 +74,9 @@
       } 
       &-18{
         font-size: 18px;
+      } 
+      &-20{
+        font-size: 20px;
       } 
       &-24{
         font-size: 24px;
@@ -97,6 +103,9 @@
       &-18{
         font-size: 18px;
       } 
+      &-20{
+        font-size: 20px;
+      } 
       &-24{
         font-size: 24px;
       } 
@@ -122,6 +131,9 @@
       &-18{
         font-size: 18px;
       } 
+      &-20{
+        font-size: 20px;
+      }
       &-24{
         font-size: 24px;
       } 
@@ -134,6 +146,51 @@
       &-60{
         font-size: 60px;
       }
+    }
+  }
+}
+
+
+// font family
+.family{
+  &-primary{
+    font-family: 'Yeseva One', 'Noto Sans TC', sans-serif;
+  }
+  &-secondary{
+    font-family: 'Noto Sans TC', 'Yeseva One', sans-serif;
+  }
+}
+
+
+// translate-middle
+.translate{
+  &-middle{
+    transform: translate(-50%, -50%);
+  }
+}
+// rotate
+.rotate{
+  &-L{
+    &-4{
+      transform:rotate(-4deg);
+    }
+  }
+  &-R{
+    &-4{
+      transform:rotate(4deg);
+    }
+  }
+}
+// center center + rotate
+.rotate-middle{
+  &-L{
+    &-4{
+      transform: translate(-50%, -50%) rotate(-4deg);
+    }
+  }
+  &-R{
+    &-4{
+      transform: translate(-50%, -50%) rotate(4deg);
     }
   }
 }
