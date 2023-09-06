@@ -1,11 +1,11 @@
-<div class="my-24 border-3 border-bottom border-primary">
-  <div class="container">
+<div class="border-3 border-bottom border-primary">
+  <header class="container my-24">
     <!-- header section -->
-    <header class="d-flex justify-content-between align-items-center py-36">
+    <div class="d-flex justify-content-between align-items-center">
       <!-- left section -->
       <h1 class="d-flex align-items-center me-4">
         <!-- logo section -->
-        <a href="#" class="d-flex">
+        <a href="index.html" class="d-flex">
           <!-- logo -->
           <div
             class="animate__animated animate__bounce me-16 me-md-24 header-logo"
@@ -45,28 +45,28 @@
           </div>
         </section>
       </h1>
-      <!-- right section -->
+
+      <!-- right section : hamburger menu -->
       <div>
+        <!-- hagurger menu -->
         <nav>
-          <a href="#" class="d-lg-none"
+          <a
+            data-bs-toggle="collapse"
+            href="#collapseMenu"
+            role="button"
+            class="d-lg-none"
             ><div class="menu-btn hover-bg--helper-third-darken"></div
           ></a>
           <div class="d-none d-lg-block">
             <ul class="d-flex align-items-center">
               <li class="animate__animated animate__bounce nav-item me-24">
-                <a
-                  href="#"
-                  class="d-flex align-items-center hover-border-bottom--primary"
-                >
+                <a href="#" class="d-flex align-items-center hover--secondary">
                   <i class="icofont-ui-file me-4"></i>
                   <span class="item-text">REGISTER</span>
                 </a>
               </li>
               <li class="animate__animated animate__bounce nav-item">
-                <a
-                  href="#"
-                  class="d-flex align-items-center hover-border-bottom--primary"
-                >
+                <a href="#" class="d-flex align-items-center hover--secondary">
                   <i class="icofont-ui-user me-4"></i>
                   <span class="item-text">LOGIN</span>
                 </a>
@@ -75,6 +75,27 @@
           </div>
         </nav>
       </div>
-    </header>
+    </div>
+  </header>
+  <!-- hamburger menu content -->
+  <div class="collapse" id="collapseMenu">
+    <div class="border-top border-3 border-dark">
+      <div class="container py-12">
+        <ul class="fs-4 d-flex align-items-center justify-content-end">
+          <li class="me-12">
+            <a href="#" class="d-flex align-items-center hover--secondary">
+              <i class="icofont-ui-file me-4"></i>
+              <span>REGISTER</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="#" class="d-flex align-items-center hover--secondary">
+              <i class="icofont-ui-user me-4"></i>
+              <span class="item-text">LOGIN</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

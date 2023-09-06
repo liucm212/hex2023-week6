@@ -1,5 +1,7 @@
 import './assets/scss/all.scss';
 
+import 'bootstrap/js/dist/collapse'
+
 // aos animation
 import './js/aos'
 
