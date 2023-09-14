@@ -3,26 +3,28 @@
     <!-- header section -->
     <div class="d-flex justify-content-between align-items-center">
       <!-- left section -->
-      <h1 class="d-flex align-items-center me-4">
+      <div class="d-flex align-items-center me-4">
         <!-- logo section -->
-        <a href="index.html" class="d-flex">
-          <!-- logo -->
-          <div
-            class="animate__animated animate__bounce me-16 me-md-24 header-logo"
-          >
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
-              alt="logo圖。黃色背景，裡面是黑色光芒圖案。"
-            />
-          </div>
-          <!-- logo text -->
-          <div class="d-none d-md-flex align-items-center me-md-48">
-            <span class="fs-2 me-4">7TAO</span>
-            <span class="item-text">活動訂票網</span>
-          </div>
-        </a>
+        <h1>
+          <a href="index.html" class="d-flex">
+            <!-- logo -->
+            <div
+              class="animate__animated animate__bounce me-16 me-md-24 header-logo"
+            >
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
+                alt="logo圖。黃色背景，裡面是黑色光芒圖案。"
+              />
+            </div>
+            <!-- logo text -->
+            <div class="d-none d-md-flex align-items-center me-md-48">
+              <span class="fs-2 me-4">7TAO</span>
+              <span class="item-text">活動訂票網</span>
+            </div>
+          </a>
+        </h1>
         <!-- 探索活動 -->
-        <section>
+        <div>
           <!-- search bar -->
           <div
             class="animate__animated animate__jello border border-2 border-primary"
@@ -43,8 +45,8 @@
               </button>
             </form>
           </div>
-        </section>
-      </h1>
+        </div>
+      </div>
 
       <!-- right section : hamburger menu -->
       <div>
@@ -78,10 +80,13 @@
     </div>
   </header>
   <!-- hamburger menu content -->
-  <div class="collapse" id="collapseMenu">
+  <div
+    class="collapse position-absolute w-100 z-3 bg-helper-third"
+    id="collapseMenu"
+  >
     <div class="border-top border-3 border-dark">
       <div class="container py-12">
-        <ul class="fs-4 d-flex align-items-center justify-content-end">
+        <ul class="fs-4">
           <li class="me-12">
             <a href="#" class="d-flex align-items-center hover--secondary">
               <i class="icofont-ui-file me-4"></i>

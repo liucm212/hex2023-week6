@@ -171,26 +171,26 @@
 // rotate
 .rotate{
   &-L{
-    &-4{
-      transform:rotate(-4deg);
+    &-2{
+      transform:rotate(-2deg);
     }
   }
   &-R{
-    &-4{
-      transform:rotate(4deg);
+    &-2{
+      transform:rotate(2deg);
     }
   }
 }
 // center center + rotate
 .rotate-middle{
   &-L{
-    &-4{
-      transform: translate(-50%, -50%) rotate(-4deg);
+    &-2{
+      transform: translate(-50%, -50%) rotate(-2deg);
     }
   }
   &-R{
-    &-4{
-      transform: translate(-50%, -50%) rotate(4deg);
+    &-2{
+      transform: translate(-50%, -50%) rotate(2deg);
     }
   }
 }

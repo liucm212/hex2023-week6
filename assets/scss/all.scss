@@ -49,20 +49,35 @@
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 
-
 // helpers
 @import './helpers/mixin' ;
-@import './helpers/font-family' ;
+
+
+// venders : 外部資源
+@import './venders/icofont';
+@import './venders/swiper';
+
 
 // base settting
 @import './base/reset' ;
 @import './base/base' ;
+@import './base/font-family' ;
+
+
+// components
+@import './components/btns';
+@import './components/cards';
+@import './components/lists';
+@import './components/pagination';
+@import './components/section-title';
+
 
 
 // layout
-@import './layout/components';
 @import './layout/header';
 @import './layout/footer';
+@import './layout/banner';
+
 
 // utils
 @import './utils/util';

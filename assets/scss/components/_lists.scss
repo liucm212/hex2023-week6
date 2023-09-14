@@ -1,0 +1,39 @@
+// list-label:相關標籤組件
+.list-label{
+  .list-item{
+    .link{
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    .sideBar{
+      width: 4px;
+      height: 100%;
+      background-color: var(--bs-dark);
+    }
+    .content{
+      border: 1px solid var(--bs-dark);
+      border-left: none;
+      padding:4px 16px;
+      line-height: normal;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    &:hover .sideBar{
+      background-color: var(--bs-secondary);
+    }
+    &:hover .content{
+      color: var(--bs-light);
+      background-color: var(--bs-dark);
+    }
+  }
+  @include xl{
+    .list-item{
+      .content{
+        padding: 4px 24px;
+        font-size: 16px;
+      }
+      
+    }
+  }
+}

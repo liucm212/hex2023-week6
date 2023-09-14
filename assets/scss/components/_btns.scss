@@ -1,0 +1,19 @@
+// checkout-button
+.checkout-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bs-light);
+  background: var(--bs-dark);
+  border: none;
+  line-height: normal;
+  font-weight: 700;
+  padding: 16px 0;
+  &:hover > *{
+    color: var(--bs-secondary);
+  }
+  @include xl{
+    font-size: 20px;
+    padding: 8px 0;
+  }
+}
