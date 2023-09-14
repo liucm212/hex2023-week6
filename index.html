@@ -12,8 +12,8 @@
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
     <title>活動訂票網 | 首頁</title>
-    <script type="module" crossorigin src="/hex2023-week6/assets/animate-c6bea5b1.js"></script>
-    <link rel="stylesheet" href="/hex2023-week6/assets/animate-7c45deb2.css">
+    <script type="module" crossorigin src="/hex2023-week6/assets/animate-f30c8af3.js"></script>
+    <link rel="stylesheet" href="/hex2023-week6/assets/animate-5ced3014.css">
   </head>
   <body class="bg-helper-third">
     <div class="border-3 border-bottom border-primary">
@@ -21,26 +21,28 @@
     <!-- header section -->
     <div class="d-flex justify-content-between align-items-center">
       <!-- left section -->
-      <h1 class="d-flex align-items-center me-4">
+      <div class="d-flex align-items-center me-4">
         <!-- logo section -->
-        <a href="index.html" class="d-flex">
-          <!-- logo -->
-          <div
-            class="animate__animated animate__bounce me-16 me-md-24 header-logo"
-          >
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
-              alt="logo圖。黃色背景，裡面是黑色光芒圖案。"
-            />
-          </div>
-          <!-- logo text -->
-          <div class="d-none d-md-flex align-items-center me-md-48">
-            <span class="fs-2 me-4">7TAO</span>
-            <span class="item-text">活動訂票網</span>
-          </div>
-        </a>
+        <h1>
+          <a href="index.html" class="d-flex">
+            <!-- logo -->
+            <div
+              class="animate__animated animate__bounce me-16 me-md-24 header-logo"
+            >
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
+                alt="logo圖。黃色背景，裡面是黑色光芒圖案。"
+              />
+            </div>
+            <!-- logo text -->
+            <div class="d-none d-md-flex align-items-center me-md-48">
+              <span class="fs-2 me-4">7TAO</span>
+              <span class="item-text">活動訂票網</span>
+            </div>
+          </a>
+        </h1>
         <!-- 探索活動 -->
-        <section>
+        <div>
           <!-- search bar -->
           <div
             class="animate__animated animate__jello border border-2 border-primary"
@@ -61,8 +63,8 @@
               </button>
             </form>
           </div>
-        </section>
-      </h1>
+        </div>
+      </div>
 
       <!-- right section : hamburger menu -->
       <div>
@@ -96,10 +98,13 @@
     </div>
   </header>
   <!-- hamburger menu content -->
-  <div class="collapse" id="collapseMenu">
+  <div
+    class="collapse position-absolute w-100 z-3 bg-helper-third"
+    id="collapseMenu"
+  >
     <div class="border-top border-3 border-dark">
       <div class="container py-12">
-        <ul class="fs-4 d-flex align-items-center justify-content-end">
+        <ul class="fs-4">
           <li class="me-12">
             <a href="#" class="d-flex align-items-center hover--secondary">
               <i class="icofont-ui-file me-4"></i>
@@ -120,7 +125,7 @@
 
     <!-- banner -->
     <div class="container mt-16 mt-xl-32 mb-32 mb-xl-48">
-      <section>
+      <div>
         <a
           href="#"
           class="banner-bg pt-16 pb-24 pt-xl-48 text-light d-flex flex-column justify-content-between"
@@ -138,7 +143,7 @@
             </p>
           </div>
         </a>
-      </section>
+      </div>
     </div>
 
     <main>
@@ -240,20 +245,20 @@
       <div class="mb-32 mb-xl-60" data-aos="fade-up">
         <div class="container">
           <!-- recent title -->
-          <section class="pb-24 pb-lg-32">
+          <div class="pb-24 pb-lg-32">
             <div class="section-label text-primary">
-              <h2 class="section-title me-9">RECENT</h2>
+              <p class="section-title me-9">RECENT</p>
               <span class="section-subtitle">近期活動</span>
             </div>
-          </section>
+          </div>
 
           <!-- card-upImgDownText--group -->
-          <section>
+          <div>
             <ul class="row gy-24 gy-xl-48 gx-xl-24">
               <!-- card-01 -->
               <li class="col-md-6 col-lg-4">
                 <div href="#" class="card-upImgDownText">
-                  <h3 class="item-header">19 MAY 2023</h3>
+                  <p class="item-header">19 MAY 2023</p>
                   <div class="item-banner ratio ratio-8x5">
                     <img
                       class="object-fit-cover"
@@ -263,7 +268,7 @@
                   </div>
                   <div class="item-body">
                     <a href="#" class="hover--helper-primary"
-                      ><h4 class="item-body-title">邪典電影派對——房間</h4></a
+                      ><h2 class="item-body-title">邪典電影派對——房間</h2></a
                     >
                     <p class="item-body-content">
                       你有聽說過「大災難家」裡面的主角 Tommy Wiseau
@@ -292,7 +297,7 @@
               <!-- card-02 -->
               <li class="col-md-6 col-lg-4">
                 <div href="#" class="card-upImgDownText">
-                  <h3 class="item-header">23 MAY 2023</h3>
+                  <p class="item-header">23 MAY 2023</p>
                   <div class="item-banner ratio ratio-8x5">
                     <img
                       class="object-fit-cover"
@@ -302,7 +307,7 @@
                   </div>
                   <div class="item-body">
                     <a href="#" class="hover--helper-primary"
-                      ><h4 class="item-body-title">怪舞俱樂部</h4></a
+                      ><h2 class="item-body-title">怪舞俱樂部</h2></a
                     >
                     <p class="item-body-content">
                       覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...
@@ -330,7 +335,7 @@
               <!-- card-03 -->
               <li class="col-md-6 col-lg-4">
                 <div href="#" class="card-upImgDownText">
-                  <h3 class="item-header">30 MAY 2023</h3>
+                  <p class="item-header">30 MAY 2023</p>
                   <div class="item-banner ratio ratio-8x5">
                     <img
                       class="object-fit-cover"
@@ -340,7 +345,7 @@
                   </div>
                   <div class="item-body">
                     <a href="#" class="hover--helper-primary"
-                      ><h4 class="item-body-title">哈利波特馬拉松</h4></a
+                      ><h2 class="item-body-title">哈利波特馬拉松</h2></a
                     >
                     <p class="item-body-content">
                       每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...
@@ -368,7 +373,7 @@
               <!-- card-04 -->
               <li class="col-md-6 col-lg-4">
                 <div href="#" class="card-upImgDownText">
-                  <h3 class="item-header">12 JUNE 2023</h3>
+                  <p class="item-header">12 JUNE 2023</p>
                   <div class="item-banner ratio ratio-8x5">
                     <img
                       class="object-fit-cover"
@@ -378,7 +383,7 @@
                   </div>
                   <div class="item-body">
                     <a href="#" class="hover--helper-primary"
-                      ><h4 class="item-body-title">皮卡丘排球大賽</h4></a
+                      ><h2 class="item-body-title">皮卡丘排球大賽</h2></a
                     >
                     <p class="item-body-content">
                       還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...
@@ -406,7 +411,7 @@
               <!-- card-05 -->
               <li class="col-md-6 col-lg-4">
                 <div href="#" class="card-upImgDownText">
-                  <h3 class="item-header">25 JUNE 2023</h3>
+                  <p class="item-header">25 JUNE 2023</p>
                   <div class="item-banner ratio ratio-8x5">
                     <img
                       class="object-fit-cover"
@@ -416,7 +421,7 @@
                   </div>
                   <div class="item-body">
                     <a href="#" class="hover--helper-primary"
-                      ><h4 class="item-body-title">酒精路跑</h4></a
+                      ><h2 class="item-body-title">酒精路跑</h2></a
                     >
                     <p class="item-body-content">
                       身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。
@@ -444,7 +449,7 @@
               <!-- card-06 -->
               <li class="col-md-6 col-lg-4">
                 <div href="#" class="card-upImgDownText">
-                  <h3 class="item-header">9 JUNE 2023</h3>
+                  <p class="item-header">9 JUNE 2023</p>
                   <div class="item-banner ratio ratio-8x5">
                     <img
                       class="object-fit-cover"
@@ -454,7 +459,7 @@
                   </div>
                   <div class="item-body">
                     <a href="#" class="hover--helper-primary"
-                      ><h4 class="item-body-title">展覽——我的房間</h4></a
+                      ><h2 class="item-body-title">展覽——我的房間</h2></a
                     >
                     <p class="item-body-content">
                       每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。
@@ -480,7 +485,7 @@
                 </div>
               </li>
             </ul>
-          </section>
+          </div>
         </div>
       </div>
 
@@ -488,21 +493,21 @@
       <div class="mb-32 mb-xl-60" data-aos="fade-up">
         <div class="container">
           <!-- online title -->
-          <section class="mb-24 mb-xl-32">
+          <div class="mb-24 mb-xl-32">
             <div class="section-label text-primary">
-              <h2 class="section-title me-9">ONLINE</h2>
+              <p class="section-title me-9">ONLINE</p>
               <span class="section-subtitle">線上活動</span>
             </div>
-          </section>
+          </div>
           <!-- online body -->
-          <section class="row gx-xl-24 gy-12 gy-xl-0">
+          <div class="row gx-xl-24 gy-12 gy-xl-0">
             <div class="col-xl-7 align-self-stretch">
               <div class="h-100 online-img"></div>
             </div>
             <div class="col-xl-5">
-              <h3 class="fz-18 fz-xl-32 fw-bold mb-8 mb-xl-16 hover--secondary">
+              <h2 class="fz-18 fz-xl-32 fw-bold mb-8 mb-xl-16 hover--secondary">
                 切特居批踢
-              </h3>
+              </h2>
               <ul class="list-label d-flex gap-8 mb-12 mb-xl-32">
                 <li class="list-item">
                   <a href="#" class="link">
@@ -535,7 +540,7 @@
                 <i class="icofont-double-right"></i
               ></a>
             </div>
-          </section>
+          </div>
         </div>
       </div>
 
@@ -561,7 +566,7 @@
             <li class="col-10 col-lg-3">
               <a href="#">
                 <div class="card-activity">
-                  <h3 class="item-title translate-middle">社群活動</h3>
+                  <p class="item-title translate-middle">社群活動</p>
                   <div class="item-img ratio ratio-1x1">
                     <img
                       class="object-fit-cover"
@@ -569,7 +574,7 @@
                       alt="一群人在昏暗的紅色燈光照耀下做出搖擺的感覺。"
                     />
                   </div>
-                  <p class="item-content">無聲派對-閉閉嘴dancing</p>
+                  <h2 class="item-content">無聲派對-閉閉嘴dancing</h2>
                 </div>
               </a>
             </li>
@@ -577,8 +582,8 @@
             <!-- card-activity-02 -->
             <li class="col-10 col-lg-3">
               <a href="#">
-                <div class="card-activity rotate-R-4">
-                  <h3 class="item-title rotate-middle-L-4">藝文活動</h3>
+                <div class="card-activity rotate-R-2">
+                  <p class="item-title rotate-middle-L-2">藝文活動</p>
                   <div class="item-img ratio ratio-1x1">
                     <img
                       class="object-fit-cover"
@@ -586,7 +591,7 @@
                       alt="一間小店面，門上方掛了一個布條，電上方也掛了一個匾額，這兩個東西上面都是日文；面對店的右方有兩台腳踏車停在店門口，左邊則是擺放一些雜物。"
                     />
                   </div>
-                  <p class="item-content">拯救老店大作戰</p>
+                  <h2 class="item-content">拯救老店大作戰</h2>
                 </div>
               </a>
             </li>
@@ -594,8 +599,8 @@
             <!-- card-activity-03 -->
             <li class="col-10 col-lg-3">
               <a href="#">
-                <div class="card-activity rotate-L-4">
-                  <h3 class="item-title translate-middle">自我覺察</h3>
+                <div class="card-activity rotate-L-2">
+                  <p class="item-title translate-middle">自我覺察</p>
                   <div class="item-img ratio ratio-1x1">
                     <img
                       class="object-fit-cover"
@@ -603,7 +608,7 @@
                       alt="三個小孩站在路邊，勾肩搭背對著鏡頭笑。"
                     />
                   </div>
-                  <p class="item-content">內觀修行-部落篇</p>
+                  <h2 class="item-content">內觀修行-部落篇</h2>
                 </div>
               </a>
             </li>
@@ -611,8 +616,8 @@
             <!-- card-activity-04 -->
             <li class="col-10 col-lg-3">
               <a href="#">
-                <div class="card-activity rotate-R-4">
-                  <h3 class="item-title rotate-middle-L-4">聯誼活動</h3>
+                <div class="card-activity rotate-R-2">
+                  <p class="item-title rotate-middle-L-2">聯誼活動</p>
                   <div class="item-img ratio ratio-1x1">
                     <img
                       class="object-fit-cover"
@@ -620,7 +625,7 @@
                       alt="一大群人潮在網上的時候賞櫻，旁邊有幾盞燈在照明。"
                     />
                   </div>
-                  <p class="item-content">賞櫻野餐</p>
+                  <h2 class="item-content">賞櫻野餐</h2>
                 </div>
               </a>
             </li>
@@ -657,31 +662,41 @@
                     想第一時間獲得新奇有趣的活動資訊？<br />
                     追蹤我們的社群吧！<br />也歡迎你聯繫我們，提供好玩有趣的活動企劃。
                   </p>
-                  <a
-                    href="mailto:7tao.event@gmail.com"
-                    class="d-flex align-items-center mb-16 hover--secondary hover-bg--dark"
-                  >
-                    <i
-                      class="icofont-ui-email bg-dark text-light p-8 me-16 hover--secondary hover-bg--dark"
-                    ></i>
-                    <span>7tao.event@gmail.com</span>
-                  </a>
-                  <a
-                    href="tel:09123123123"
-                    class="d-flex align-items-center mb-16 hover--secondary hover-bg--dark"
-                  >
-                    <i class="icofont-phone bg-dark text-light p-8 me-16"></i>
-                    <span>09123123123</span>
-                  </a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center mb-16 hover--secondary hover-bg--dark"
-                  >
-                    <i
-                      class="icofont-facebook bg-dark text-light p-8 me-16"
-                    ></i>
-                    <span>7TAO七逃</span>
-                  </a>
+                  <ul>
+                    <li>
+                      <a
+                        href="mailto:7tao.event@gmail.com"
+                        class="d-flex align-items-center mb-16 hover--secondary hover-bg--dark"
+                      >
+                        <i
+                          class="icofont-ui-email bg-dark text-light p-8 me-16 hover--secondary hover-bg--dark"
+                        ></i>
+                        <span>7tao.event@gmail.com</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="tel:09123123123"
+                        class="d-flex align-items-center mb-16 hover--secondary hover-bg--dark"
+                      >
+                        <i
+                          class="icofont-phone bg-dark text-light p-8 me-16"
+                        ></i>
+                        <span>09123123123</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="d-flex align-items-center mb-16 hover--secondary hover-bg--dark"
+                      >
+                        <i
+                          class="icofont-facebook bg-dark text-light p-8 me-16"
+                        ></i>
+                        <span>7TAO七逃</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
